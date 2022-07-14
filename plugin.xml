@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+
+
+    
+   <extension
+         point="org.grits.toolbox.core.preferencePages">
+       <page
+             category="org.grits.toolbox.entry.ms.annotation.glycan.all"
+             class="org.grits.toolbox.entry.ms.annotation.glycan.report.preference.viewer.MSGlycanAnnotationReportViewerPreferencePage"
+             id="plugin.ms.annotation.glycan.report.preference.viewer.MSGlycanAnnotationReportViewerPreferencePage"
+             name="Merged Results Viewer">
+      </page>
+   </extension>
+      
+   <extension
+         point="org.grits.toolbox.core.propertyreader">
+      <reader
+            class="org.grits.toolbox.entry.ms.annotation.glycan.report.property.io.MSGlycanAnnotationReportPropertyReader"
+            propertyId="org.grits.toolbox.property.report.ms_annotation_merge">
+      </reader>
+   </extension>
+     
+    
+  <extension
+         id="org.grits.toolbox.entry.ms.annotation.glycan.report.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+</plugin>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_EdMb0KULEeaOxbELXcAk7Q">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_knFwcKULEeaOxbELXcAk7Q" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_oFSVoKULEeaOxbELXcAk7Q" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_umhOAKULEeaOxbELXcAk7Q" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_xlwmUKULEeaOxbELXcAk7Q" elementId="plugin.ms.annotation.glycan.views.MSGlycanAnnotationReportMultiPageViewer" label="MS Glycan Annotation Merge Report" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan.report/icons/merge.png" bindingContexts="_oFSVoKULEeaOxbELXcAk7Q" allowMultiple="true" category="org.grits.toolbox.property.report.ms_annotation_merge" closeable="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation.glycan.report/org.grits.toolbox.entry.ms.annotation.glycan.report.views.MSGlycanAnnotationReportMultiPageViewer">
+      <tags>default</tags>
+      <tags>perspective:org.grits.toolbox.core.perspective.msperspective</tags>
+      <tags>removeOnHide</tags>
+      <toolbar xmi:id="_7e6R0CFDEee93_TNp1fXXA" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8SMI4CFDEee93_TNp1fXXA" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledtoolitem.export" label="Export" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan/icons/Export.png" tooltip="Export merge report" command="_WKif8KUOEeaOxbELXcAk7Q"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Rd81AKUOEeaOxbELXcAk7Q" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_Tj8RIKUOEeaOxbELXcAk7Q" elementId="plugin.ms.annotation.glycan.views.MSGlycanAnnotationReportMultiPageViewer" commandName="ViewMSGlycanMergeReport"/>
+    <elements xsi:type="commands:Command" xmi:id="_WKif8KUOEeaOxbELXcAk7Q" elementId="org.grits.toolbox.core.menu.main.MSGlycanAnnotationReport.export" commandName="ExportMSGlycanAnnotationReport"/>
+    <elements xsi:type="commands:Command" xmi:id="_enYJYKUOEeaOxbELXcAk7Q" elementId="ms.annotation.report.command.ShowWizard" commandName="MsMergeReport"/>
+    <elements xsi:type="commands:Command" xmi:id="_B5tXkDmZEee2EqlhLIUqYA" elementId="org.grits.toolbox.entry.ms.handler.viewMSGlycanAnnotationResultsFromMerge" commandName="ViewMSGlycanAnnotationResultsFromMerge"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_kPCVcKUOEeaOxbELXcAk7Q" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_msiSoKUOEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handler.viewer" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation.glycan.report/org.grits.toolbox.entry.ms.annotation.glycan.report.handler.ViewMSGlycanAnnotationReportResults" command="_Tj8RIKUOEeaOxbELXcAk7Q"/>
+    <elements xsi:type="commands:Handler" xmi:id="_vOtvEKUOEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handler.merge" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation.glycan.report/org.grits.toolbox.entry.ms.annotation.glycan.report.handler.MSGlycanAnnotationReportAnnotationHandler" command="_enYJYKUOEeaOxbELXcAk7Q"/>
+    <elements xsi:type="commands:Handler" xmi:id="_4oStkKUOEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handler.export" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation.glycan.report/org.grits.toolbox.entry.ms.annotation.glycan.report.handler.MSGlycanAnnotationReportExportCommand" command="_WKif8KUOEeaOxbELXcAk7Q"/>
+    <elements xsi:type="commands:Handler" xmi:id="_MVk5gDmZEee2EqlhLIUqYA" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handler.viewMSGlycanAnnotation" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation.glycan.report/org.grits.toolbox.entry.ms.annotation.glycan.report.handler.ViewMSGlycanAnnotationResultsFromMerge" command="_B5tXkDmZEee2EqlhLIUqYA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZR1LkKUPEeaOxbELXcAk7Q" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins">
+    <elements xsi:type="menu:Menu" xmi:id="_cH-SQKUPEeaOxbELXcAk7Q" elementId="org.grits.toolbox.core.menu.main.Merge" label="MS Glycan Annotation Merge">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_lsA0UKUPEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledmenuitem.newMsGlycanAnnotationReport" label="New MS Glycan Annotation Report" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan.report/icons/merge.png" command="_enYJYKUOEeaOxbELXcAk7Q"/>
+      <children xsi:type="menu:MenuSeparator" xmi:id="_uA9tEKUPEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.menuseparator.0"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_uwSRMKUPEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledmenuitem.export" label="Export" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan/icons/Export.png" command="_WKif8KUOEeaOxbELXcAk7Q"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_3WFCUKUPEeaOxbELXcAk7Q" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.grits.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_63O04KUPEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledmenuitem.mergeMsGlycanAnnotations" label="MS Glycan Annotation Merge" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan.report/icons/merge.png" command="_enYJYKUOEeaOxbELXcAk7Q"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DdvXsKUQEeaOxbELXcAk7Q" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.view">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_J8De8KUQEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledmenuitem.msGlycanAnnotationMergeReport" label="MS Glycan Annotation Merge Report" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan.report/icons/merge.png" command="_Tj8RIKUOEeaOxbELXcAk7Q"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_W-0KoKUQEeaOxbELXcAk7Q" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_aCJ_0KUQEeaOxbELXcAk7Q" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledmenuitem.mergeMsGlycanAnnotations" label="MS Glycan Annotations Merge" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan.report/icons/merge.png" command="_enYJYKUOEeaOxbELXcAk7Q"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_S9rsYCEjEee93_TNp1fXXA" featurename="children" parentElementId="org.grits.toolbox.core.toolbar.main">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_UopZYCEjEee93_TNp1fXXA" elementId="org.grits.toolbox.entry.ms.annotation.glycan.report.handledtoolitem.newmsmerge" label="New MS Merge" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan.report/icons/merge.png" tooltip="Create a new MS Merge Report" command="_enYJYKUOEeaOxbELXcAk7Q"/>
+  </fragments>
+</fragment:ModelFragments>
